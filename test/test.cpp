@@ -110,3 +110,95 @@ TEST(Power_of_n, Minus101_power_5_is_equal_to_minus10510100501)
 {
     ASSERT_EQ(power(-101,5), -10510100501);
 }
+
+//for negative powers
+TEST(Power_of_n, 1_power_minus1_is_equal_to_1)
+{
+    ASSERT_EQ(power(1,-1), 1);
+}
+
+TEST(Power_of_n, 1_power_minus2_is_equal_to_1)
+{
+    ASSERT_EQ(power(1,-2), 1);
+}
+
+TEST(Power_of_n, 1_power_minus245_is_equal_to_1)
+{
+    ASSERT_EQ(power(1,-245), 1);
+}
+
+TEST(Power_of_n, 2_power_minus1_is_equal_to_0point5)
+{
+    ASSERT_EQ(power(2,-1), 0.5);
+}
+
+TEST(Power_of_n, 3_power_minus1_is_equal_to_0point333333)
+{
+    ASSERT_NEAR(power(3,-1), 0.333333, 1e-5);
+}
+
+TEST(Power_of_n, 700_power_minus1_is_equal_to_0point001428)
+{
+    ASSERT_NEAR(power(700,-1), 0.001428, 1e-5);
+}
+
+TEST(Power_of_n, 2_power_minus2_is_equal_to_0point25)
+{
+    ASSERT_EQ(power(2,-2), 0.25);
+}
+
+TEST(Power_of_n, 2_power_minus3_is_equal_to_0point125)
+{
+    ASSERT_EQ(power(2,-3), 0.125);
+}
+
+TEST(Power_of_n, 2_power_minus10_is_equal_to_0point000976)
+{
+    ASSERT_NEAR(power(2,-10), 0.000976, 1e-5);
+}
+
+TEST(Power_of_n, 3_power_minus2_is_equal_to_0point111111)
+{
+    ASSERT_NEAR(power(3,-2), 0.111111, 1e-5);
+}
+
+TEST(Power_of_n, 3_power_minus8_is_equal_to_0point000152)
+{
+    ASSERT_NEAR(power(3,-8), 0.000152, 1e-5);
+}
+
+TEST(Power_of_n, 15_power_minus7_is_equal_to_0point000001)
+{
+    ASSERT_NEAR(power(15,-5), 0.000001, 1e-5);
+}
+
+//for negative number of negative powers
+TEST(Power_of_n, minus1_power_minus1_is_equal_to_minus1)
+{
+    ASSERT_EQ(power(-1, -1), -1);
+}
+
+TEST(Power_of_n, minus1_power_minus2_is_equal_to_1)
+{
+    ASSERT_EQ(power(-1, -2), 1);
+}
+
+TEST(Power_of_n, minus2_power_minus1_is_equal_to_minus0point5)
+{
+    ASSERT_EQ(power(-2, -1), -0.5);
+}
+
+TEST(Power_of_n, minus2_power_minus2_is_equal_to_0point25)
+{
+    ASSERT_EQ(power(-2, -2), 0.25);
+}
+
+TEST(Power_of_n, minus14_power_minus4_is_equal_to_0point000026)
+{
+    ASSERT_NEAR(power(-14, -4), 0.000026, 1e-5);
+}
+
+TEST(Power_of_n, minus14_power_minus3_is_equal_to_minus0point000364)
+{
+    ASSERT_NEAR(power(-14, -3), -0.000364, 1e-5);
+}
