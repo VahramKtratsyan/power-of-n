@@ -1,3 +1,5 @@
+#include "power.hpp"
+
 double power(int x, int n)
 {
     double result = 1;
