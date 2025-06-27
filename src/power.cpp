@@ -1,4 +1,4 @@
-#include "power.hpp"
+#include "../header/power.hpp"
 
 double power(int x, int n)
 {
