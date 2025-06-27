@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "power.hpp"
+#include "../header/power.hpp"
 
 TEST(Power_of_n, 0_power_0_is_equal_to_1)
 {
